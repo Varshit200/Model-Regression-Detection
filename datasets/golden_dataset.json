@@ -1,0 +1,17 @@
+﻿{
+  "version": "1.0.0",
+  "test_cases": [
+    {"id": "BILL-001", "input": "I was charged twice for my subscription.", "expected": {"category": "billing", "summary": "The customer reports a duplicate subscription charge."}},
+    {"id": "BILL-002", "input": "I paid my invoice yesterday, but it still shows unpaid.", "expected": {"category": "billing", "summary": "The customer reports a paid invoice still showing as unpaid."}},
+    {"id": "TECH-001", "input": "The application crashes whenever I upload a PDF.", "expected": {"category": "technical", "summary": "The customer reports application crashes during PDF uploads."}},
+    {"id": "TECH-002", "input": "Your website returns a 500 error.", "expected": {"category": "technical", "summary": "The customer reports a 500 error on the website."}},
+    {"id": "ACC-001", "input": "I cannot reset my password.", "expected": {"category": "account", "summary": "The customer cannot reset their password."}},
+    {"id": "ACC-002", "input": "I cannot sign in to my account.", "expected": {"category": "account", "summary": "The customer cannot sign in to their account."}},
+    {"id": "GEN-001", "input": "What time does your support team open on Saturday?", "expected": {"category": "general", "summary": "The customer asks about Saturday support hours."}},
+    {"id": "GEN-002", "input": "Do you offer student discounts?", "expected": {"category": "general", "summary": "The customer asks whether student discounts are available."}},
+    {"id": "EDGE-001", "input": "I was charged twice!!!", "expected": {"category": "billing", "summary": "The customer reports being charged twice."}},
+    {"id": "EDGE-002", "input": "Great, another incorrect charge on my bill.", "expected": {"category": "billing", "summary": "The customer reports an incorrect bill charge."}},
+    {"id": "EDGE-003", "input": "I cannot log in because the password reset page is broken.", "expected": {"category": "account", "summary": "The customer cannot log in because the password reset page is broken."}},
+    {"id": "EDGE-004", "input": "I was charged twice and the app crashes when I open the receipt.", "expected": {"category": "billing", "summary": "The customer reports a duplicate charge and a receipt-related app crash."}}
+  ]
+}

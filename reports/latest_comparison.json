@@ -1,0 +1,11 @@
+{
+  "compared_at": "2026-10-12T11:56:51.912133+00:00",
+  "baseline_accuracy": 100.0,
+  "candidate_accuracy": 100.0,
+  "accuracy_change": 0.0,
+  "regression_threshold": 5.0,
+  "threshold_breached": false,
+  "regressions": [],
+  "improvements": [],
+  "regression_detected": false
+}

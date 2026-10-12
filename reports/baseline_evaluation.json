@@ -1,0 +1,106 @@
+{
+  "run_at": "2026-10-12T11:33:43.081104+00:00",
+  "mode": "mock",
+  "total_cases": 12,
+  "correct_predictions": 12,
+  "incorrect_predictions": 0,
+  "accuracy_percent": 100.0,
+  "results": [
+    {
+      "id": "BILL-001",
+      "input": "I was charged twice for my subscription.",
+      "expected_category": "billing",
+      "predicted_category": "billing",
+      "passed": true,
+      "summary": "The customer has a billing or payment-related enquiry."
+    },
+    {
+      "id": "BILL-002",
+      "input": "I paid my invoice yesterday, but it still shows unpaid.",
+      "expected_category": "billing",
+      "predicted_category": "billing",
+      "passed": true,
+      "summary": "The customer has a billing or payment-related enquiry."
+    },
+    {
+      "id": "TECH-001",
+      "input": "The application crashes whenever I upload a PDF.",
+      "expected_category": "technical",
+      "predicted_category": "technical",
+      "passed": true,
+      "summary": "The customer reports a technical issue."
+    },
+    {
+      "id": "TECH-002",
+      "input": "Your website returns a 500 error.",
+      "expected_category": "technical",
+      "predicted_category": "technical",
+      "passed": true,
+      "summary": "The customer reports a technical issue."
+    },
+    {
+      "id": "ACC-001",
+      "input": "I cannot reset my password.",
+      "expected_category": "account",
+      "predicted_category": "account",
+      "passed": true,
+      "summary": "The customer has an account access-related enquiry."
+    },
+    {
+      "id": "ACC-002",
+      "input": "I cannot sign in to my account.",
+      "expected_category": "account",
+      "predicted_category": "account",
+      "passed": true,
+      "summary": "The customer has an account access-related enquiry."
+    },
+    {
+      "id": "GEN-001",
+      "input": "What time does your support team open on Saturday?",
+      "expected_category": "general",
+      "predicted_category": "general",
+      "passed": true,
+      "summary": "The customer has a general enquiry."
+    },
+    {
+      "id": "GEN-002",
+      "input": "Do you offer student discounts?",
+      "expected_category": "general",
+      "predicted_category": "general",
+      "passed": true,
+      "summary": "The customer has a general enquiry."
+    },
+    {
+      "id": "EDGE-001",
+      "input": "I was charged twice!!!",
+      "expected_category": "billing",
+      "predicted_category": "billing",
+      "passed": true,
+      "summary": "The customer has a billing or payment-related enquiry."
+    },
+    {
+      "id": "EDGE-002",
+      "input": "Great, another incorrect charge on my bill.",
+      "expected_category": "billing",
+      "predicted_category": "billing",
+      "passed": true,
+      "summary": "The customer has a billing or payment-related enquiry."
+    },
+    {
+      "id": "EDGE-003",
+      "input": "I cannot log in because the password reset page is broken.",
+      "expected_category": "account",
+      "predicted_category": "account",
+      "passed": true,
+      "summary": "The customer has an account access-related enquiry."
+    },
+    {
+      "id": "EDGE-004",
+      "input": "I was charged twice and the app crashes when I open the receipt.",
+      "expected_category": "billing",
+      "predicted_category": "billing",
+      "passed": true,
+      "summary": "The customer has a billing or payment-related enquiry."
+    }
+  ]
+}

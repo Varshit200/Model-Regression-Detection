@@ -1,10 +1,10 @@
 {
-  "run_at": "2026-10-12T11:56:51.668514+00:00",
+  "run_at": "2026-10-13T07:00:12.520268+00:00",
   "mode": "mock",
   "total_cases": 12,
-  "correct_predictions": 12,
-  "incorrect_predictions": 0,
-  "accuracy_percent": 100.0,
+  "correct_predictions": 10,
+  "incorrect_predictions": 2,
+  "accuracy_percent": 83.33,
   "results": [
     {
       "id": "BILL-001",
@@ -12,7 +12,7 @@
       "expected_category": "billing",
       "predicted_category": "billing",
       "passed": true,
-      "summary": "The customer has a billing or payment-related enquiry."
+      "summary": "The customer reports being charged twice for a subscription."
     },
     {
       "id": "BILL-002",
@@ -20,7 +20,7 @@
       "expected_category": "billing",
       "predicted_category": "billing",
       "passed": true,
-      "summary": "The customer has a billing or payment-related enquiry."
+      "summary": "The customer reports that their invoice is still showing as unpaid after payment."
     },
     {
       "id": "TECH-001",
@@ -28,7 +28,7 @@
       "expected_category": "technical",
       "predicted_category": "technical",
       "passed": true,
-      "summary": "The customer reports a technical issue."
+      "summary": "The customer reports that the application crashes specifically when uploading PDF files."
     },
     {
       "id": "TECH-002",
@@ -36,7 +36,7 @@
       "expected_category": "technical",
       "predicted_category": "technical",
       "passed": true,
-      "summary": "The customer reports a technical issue."
+      "summary": "The customer reports a 500 error on the website."
     },
     {
       "id": "ACC-001",
@@ -44,7 +44,7 @@
       "expected_category": "account",
       "predicted_category": "account",
       "passed": true,
-      "summary": "The customer has an account access-related enquiry."
+      "summary": "The customer cannot reset their password."
     },
     {
       "id": "ACC-002",
@@ -52,7 +52,7 @@
       "expected_category": "account",
       "predicted_category": "account",
       "passed": true,
-      "summary": "The customer has an account access-related enquiry."
+      "summary": "The customer cannot sign in to their account."
     },
     {
       "id": "GEN-001",
@@ -60,7 +60,7 @@
       "expected_category": "general",
       "predicted_category": "general",
       "passed": true,
-      "summary": "The customer has a general enquiry."
+      "summary": "The customer asks about the support team's Saturday opening time."
     },
     {
       "id": "GEN-002",
@@ -68,7 +68,7 @@
       "expected_category": "general",
       "predicted_category": "general",
       "passed": true,
-      "summary": "The customer has a general enquiry."
+      "summary": "The customer inquires about student discounts."
     },
     {
       "id": "EDGE-001",
@@ -76,7 +76,7 @@
       "expected_category": "billing",
       "predicted_category": "billing",
       "passed": true,
-      "summary": "The customer has a billing or payment-related enquiry."
+      "summary": "The customer reports being charged twice for a subscription."
     },
     {
       "id": "EDGE-002",
@@ -84,23 +84,23 @@
       "expected_category": "billing",
       "predicted_category": "billing",
       "passed": true,
-      "summary": "The customer has a billing or payment-related enquiry."
+      "summary": "The customer reports another incorrect charge on their bill."
     },
     {
       "id": "EDGE-003",
       "input": "I cannot log in because the password reset page is broken.",
       "expected_category": "account",
-      "predicted_category": "account",
-      "passed": true,
-      "summary": "The customer has an account access-related enquiry."
+      "predicted_category": "technical",
+      "passed": false,
+      "summary": "The customer reports that the password reset page is broken, preventing them from logging in."
     },
     {
       "id": "EDGE-004",
       "input": "I was charged twice and the app crashes when I open the receipt.",
       "expected_category": "billing",
-      "predicted_category": "billing",
-      "passed": true,
-      "summary": "The customer has a billing or payment-related enquiry."
+      "predicted_category": "technical",
+      "passed": false,
+      "summary": "The customer reports being charged twice and the app crashing when opening a receipt."
     }
   ]
 }

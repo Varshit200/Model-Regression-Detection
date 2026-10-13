@@ -1,11 +1,14 @@
 {
-  "compared_at": "2026-10-12T11:56:51.912133+00:00",
+  "compared_at": "2026-10-13T07:02:32.057886+00:00",
   "baseline_accuracy": 100.0,
-  "candidate_accuracy": 100.0,
-  "accuracy_change": 0.0,
+  "candidate_accuracy": 83.33,
+  "accuracy_change": -16.67,
   "regression_threshold": 5.0,
-  "threshold_breached": false,
-  "regressions": [],
+  "threshold_breached": true,
+  "regressions": [
+    "EDGE-003",
+    "EDGE-004"
+  ],
   "improvements": [],
-  "regression_detected": false
+  "regression_detected": true
 }
